@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./arquivos/millennium-falcon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cabeçalho com logo, menu e redes sociais -->
+    <header>
+        <a href="./index.html">
+            <div class="logo">
+                <img src="./arquivos/Star Wars Logo3.png" alt="logo" class="logo-img" />
+            </div>
+        </a>
+
+        <!-- Menu principal -->
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./characters.html">Personagens</a></li>
+                <li><a href="./planets.html">Planetas</a></li>
+                <li><a href="./spaceships.html">Naves Espaciais</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/ric.b94/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/ricardo.barreto.311" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://github.com/Ricbss" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ricardo-barreto-521241277/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Contêiner principal -->
+    <div class="main-container">
+        <h2>Conheca um pouco sobre Star Wars em um so lugar</h2>
+        <div class="main-content" id="main-content"></div>
+    </div>
+
+    <!-- Contêiner de trailer -->
+    <div id="trailer-container">
+        <div class="content">
+            <video controls class="trailer">
+                <source src="./arquivos/Guerra nas Estrelas (Star Wars, 1977) Trailer Legendado HD.mp4"
+                    type="video/mp4">
+                Seu navegador não possui suporte para vídeos
+            </video>
+            <div id="sinopse">
+                <p class="description">
+                    Em Star Wars - Episódio IV, o jovem Luke Skywalker (Mark Hamill) sonha ir para a Academia como seus
+                    amigos,
+                    mas se vê envolvido em uma guerra intergalática quando seu tio compra dois robôs
+                    e com eles encontra uma mensagem da princesa Leia Organa (Carrie Fisher) para o Jedi Obi-Wan Kenobi
+                    (Alec Guinness)
+                    sobre os planos da construção da Estrela da Morte, uma gigantesca estação espacial com capacidade
+                    para destruir um planeta.
+                    Luke então se junta aos cavaleiros Jedi e a Han Solo (Harrison Ford), um mercenário,
+                    para tentar destruir esta terrível ameaça ao lado dos membros da resistência.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p class="footer-logo">Star Wars</p>
+        <p class="copyrigth">Desenvolvido por &copy; Ricardo Barreto</p>
+    </footer>
+
+    <!-- Script para ícones do Font Awesome -->
+    <script src="https://kit.fontawesome.com/4b2cb3cb32.js" crossorigin="anonymous"></script>
+    <!-- <script src="./script.js"></script> -->
+    <!-- <script>
+        // Script para abrir/fechar o menu hamburguer
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu ul');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script> -->
+</body>
+
+</html>

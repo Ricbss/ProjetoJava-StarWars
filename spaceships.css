@@ -1,0 +1,524 @@
+/* Importação da fonte personalizada Star Wars */
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+body {
+    background-image: url('./arquivos/Fundo2.jpg');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilização do cabeçalho e logo */
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80%;
+    height: auto;
+}
+
+.logo-text {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+}
+
+/* Estilização das redes sociais */
+.social-media {
+    width: 130px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+i:hover {
+    color: gold;
+}
+
+/* Container principal */
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: 'Star Wars', sans-serif;
+    margin-bottom: 20px;
+    color: gold;
+    font-weight: 300;
+}
+
+/* Conteúdo principal */
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+}
+
+/* Vídeo e Sinopse */
+#trailer-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.trailer {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+#sinopse {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.description {
+    color: gold;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+/* Estilização das cartas de personagens */
+.cards {
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.starship-name-bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.starship-name {
+    font-family: 'Star Wars', sans-serif;
+    color: gold;
+    font-size: 1rem;
+}
+
+/* Botões de navegação */
+.buttons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: gold;
+}
+
+#back-button {
+    visibility: hidden;
+}
+
+/* Estilização do rodapé */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyrigth {
+    font-weight: 500;
+}
+
+/* Estilização do modal */
+.modal {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+.modal-content {
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.starship-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.starship-details {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gold;
+}
+
+/* Seção de Starships */
+.starship-section {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.starship-section h2 {
+    font-family: 'Star Wars', sans-serif;
+    color: gold;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.starship-card {
+    width: 250px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    display: inline-block;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.starship-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.8);
+}
+
+.starship-img {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.starship-name {
+    font-size: 15px;
+    /* Ajuste o tamanho conforme necessário */
+    font-weight: bold;
+    color: gold;
+    /* Cor dourada */
+    text-align: center;
+    /* Centraliza o texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Garante que o texto centralize no card */
+}
+
+
+.starship-info {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: left;
+}
+
+.starship-info span {
+    color: gold;
+    font-weight: bold;
+}
+
+/* Estilos para o botão de navegação específico da seção Starships */
+.starship-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.starship-buttons button {
+    width: 100px;
+    height: 40px;
+    background-color: gold;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.starship-buttons button:hover {
+    background-color: #000;
+    color: gold;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .starship-card {
+        width: 180px;
+        height: 250px;
+    }
+
+    .starships-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .starship-buttons button {
+        width: 80px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .starship-card {
+        width: 150px;
+        height: 220px;
+    }
+
+    .starships-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .starship-info {
+        font-size: 0.9rem;
+    }
+
+    .starship-buttons button {
+        width: 70px;
+        height: 30px;
+    }
+}
+
+/* Estilo do menu */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    font-family: 'Star Wars', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: gold;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Ajuste para tablets (até 768px de largura) */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 60%;
+    }
+
+    .social-media {
+        width: 800px;
+    }
+
+    .main-content {
+        padding: 0 10px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .cards {
+        width: 180px;
+        height: 370px;
+    }
+
+    .modal-content {
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .buttons {
+        width: 80%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Ajuste para celulares (até 480px de largura) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo-img {
+        width: 80%;
+    }
+
+    .logo-text {
+        font-size: 0.8rem;
+    }
+
+    .social-media {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .main-container {
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 0 10px;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+
+    .cards {
+        width: 150px;
+        height: 300px;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    button {
+        width: 60px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .modal-content {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .footer-logo {
+        font-size: 1.2rem;
+    }
+}

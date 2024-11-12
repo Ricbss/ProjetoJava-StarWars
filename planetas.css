@@ -1,0 +1,614 @@
+/* Importação da fonte personalizada Star Wars */
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+/* Importa a fonte "Star Wars" */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+/* Importa a fonte "Kdam Thmor Pro" do Google Fonts */
+
+/* Reset geral */
+* {
+    margin: 0;
+    /* Remove a margem padrão de todos os elementos */
+    padding: 0;
+    /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box;
+    /* Faz com que padding e border sejam incluídos nas dimensões do elemento */
+    list-style: none;
+    /* Remove as bolinhas de listas (ul, ol) */
+    color: #fff;
+    /* Define a cor do texto como branco para todos os elementos */
+}
+
+body {
+    background-image: url('./arquivos/Fundo6.png');
+    /* Define uma imagem de fundo para o corpo da página */
+    background-size: cover;
+    /* Faz a imagem de fundo cobrir toda a tela, sem distorções */
+}
+
+a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+}
+
+/* Estilização do cabeçalho e logo */
+header {
+    height: 70px;
+    /* Define a altura do cabeçalho como 70px */
+    display: flex;
+    /* Define o cabeçalho como um container flexível */
+    align-items: center;
+    /* Alinha os itens do cabeçalho verticalmente ao centro */
+    justify-content: space-around;
+    /* Distribui os itens de forma equidistante no cabeçalho */
+}
+
+.logo {
+    margin-top: 0px;
+    /* Remove qualquer margem superior do logo */
+    width: 100%;
+    /* Define a largura do container do logo como 100% */
+    display: flex;
+    /* Define o logo como um container flexível */
+    justify-content: center;
+    /* Alinha o logo horizontalmente ao centro */
+    align-items: center;
+    /* Alinha o logo verticalmente ao centro */
+}
+
+.logo-img {
+    width: 80%;
+    /* Define a largura da imagem do logo como 80% do container */
+    height: auto;
+    /* Ajusta automaticamente a altura para manter a proporção da imagem */
+}
+
+.logo-text {
+    font-family: 'Star Wars', sans-serif;
+    /* Aplica a fonte 'Star Wars' ao texto do logo */
+    font-size: 1rem;
+    /* Define o tamanho da fonte do logo como 1rem */
+}
+
+/* Estilização das redes sociais */
+.social-media {
+    width: 130px;
+    /* Define a largura do container das redes sociais */
+    margin-right: 200px;
+    /* Aplica uma margem à direita do container das redes sociais */
+    display: flex;
+    /* Organiza os ícones de redes sociais de forma flexível */
+    justify-content: space-between;
+    /* Distribui os ícones igualmente com espaçamento entre eles */
+}
+
+i {
+    font-size: 1.2rem;
+    /* Define o tamanho da fonte dos ícones como 1.2rem */
+}
+
+i:hover {
+    color: gold;
+    /* Altera a cor dos ícones para dourado ao passar o mouse */
+}
+
+/* Container principal */
+.main-container {
+    display: flex;
+    /* Define o container principal como um container flexível */
+    align-items: center;
+    /* Alinha os itens do container principal verticalmente ao centro */
+    flex-direction: column;
+    /* Organiza os itens do container principal em uma coluna */
+    width: 100%;
+    /* Define a largura do container principal como 100% */
+    padding: 20px 0;
+    /* Aplica um preenchimento de 20px na parte superior e inferior do container */
+}
+
+h2 {
+    font-family: 'Star Wars', sans-serif;
+    /* Aplica a fonte 'Star Wars' ao texto do subtítulo */
+    margin-bottom: 20px;
+    /* Aplica uma margem inferior de 20px ao subtítulo */
+    color: gold;
+    /* Define a cor do texto como dourado */
+    font-weight: 300;
+    /* Define o peso da fonte como leve */
+}
+
+/* Conteúdo principal */
+.main-content {
+    width: 100%;
+    /* Define a largura do conteúdo principal como 100% */
+    display: flex;
+    /* Define o conteúdo principal como um container flexível */
+    justify-content: center;
+    /* Alinha o conteúdo principal horizontalmente ao centro */
+    flex-wrap: wrap;
+    /* Permite que os itens se ajustem para novas linhas quando necessário */
+    column-gap: 20px;
+    /* Define um espaçamento de 20px entre as colunas */
+    row-gap: 10px;
+    /* Define um espaçamento de 10px entre as linhas */
+    padding: 0 20px;
+    /* Aplica um preenchimento de 20px nas laterais do conteúdo */
+}
+
+/* Vídeo e Sinopse */
+#trailer-container {
+    width: 100vw;
+    /* Define a largura do container do trailer como 100% da largura da janela */
+    height: 100vh;
+    /* Define a altura do container do trailer como 100% da altura da janela */
+    display: flex;
+    /* Define o container do trailer como flexível */
+    flex-direction: column;
+    /* Organiza o vídeo e a sinopse em uma coluna */
+    align-items: center;
+    /* Alinha o conteúdo ao centro horizontalmente */
+    justify-content: center;
+    /* Alinha o conteúdo ao centro verticalmente */
+    text-align: center;
+    /* Centraliza o texto da sinopse */
+}
+
+.content {
+    display: flex;
+    /* Define o conteúdo como flexível */
+    flex-direction: column;
+    /* Organiza o conteúdo em uma coluna */
+    align-items: center;
+    /* Alinha o conteúdo horizontalmente ao centro */
+    justify-content: center;
+    /* Alinha o conteúdo verticalmente ao centro */
+    text-align: center;
+    /* Centraliza o conteúdo do texto da sinopse */
+    width: 100%;
+    /* Define a largura do conteúdo como 100% */
+}
+
+.trailer {
+    width: 100%;
+    /* O vídeo ocupa toda a largura da tela */
+    height: auto;
+    /* Ajusta a altura automaticamente para manter a proporção */
+    max-height: 80vh;
+    /* Limita a altura máxima do vídeo para 80% da altura da tela */
+    object-fit: cover;
+    /* Faz com que o vídeo cubra todo o espaço sem distorcer */
+    margin-top: 50px;
+    /* Aplica uma margem superior de 50px ao vídeo */
+}
+
+#sinopse {
+    width: 80%;
+    /* Define a largura da sinopse como 80% */
+    height: 100%;
+    /* Define a altura da sinopse como 100% */
+    max-width: 800px;
+    /* Define a largura máxima da sinopse como 800px */
+    display: flex;
+    /* Define o container da sinopse como flexível */
+    flex-direction: column;
+    /* Organiza o conteúdo da sinopse em uma coluna */
+    justify-content: center;
+    /* Alinha o conteúdo da sinopse verticalmente ao centro */
+    margin-top: 20px;
+    /* Aplica uma margem superior de 20px na sinopse */
+}
+
+.description {
+    color: gold;
+    /* Define a cor do texto da sinopse como dourado */
+    font-size: 16px;
+    /* Define o tamanho da fonte da descrição como 16px */
+    text-align: center;
+    /* Centraliza o texto dentro da sinopse */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    /* Aplica a fonte 'Kdam Thmor Pro' à descrição */
+}
+
+/* Estilização das cartas de personagens */
+.cards {
+    width: 230px;
+    /* Define a largura das cartas de personagens como 230px */
+    height: 470px;
+    /* Define a altura das cartas de personagens como 470px */
+    background-position: center;
+    /* Centraliza a imagem de fundo das cartas */
+    background-size: cover;
+    /* Faz com que a imagem de fundo cubra toda a área da carta */
+    display: flex;
+    /* Define as cartas como containers flexíveis */
+    align-items: end;
+    /* Alinha os itens da carta ao final (parte inferior) */
+    border-radius: 8px;
+    /* Aplica bordas arredondadas às cartas */
+    cursor: pointer;
+    /* Aplica o cursor de ponteiro ao passar o mouse sobre a carta */
+    transition: 0.5s;
+    /* Adiciona uma transição suave de 0.5s */
+    padding: 5px;
+    /* Aplica um preenchimento de 5px nas cartas */
+    background-image: url('./imagens/planet1.jpg');
+    /* Define uma imagem de fundo para as cartas */
+}
+
+.cards:hover {
+    transform: scale(1.02);
+    /* Aplica um efeito de zoom quando o mouse passa sobre a carta */
+}
+
+/* Estilização do nome do planeta no fundo */
+.planet-name-bg {
+    width: 100%;
+    /* Define a largura do fundo do nome do planeta como 100% do seu container */
+    height: 30px;
+    /* Define a altura do fundo do nome do planeta como 30px */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Define a cor de fundo como preta com 50% de transparência */
+    display: flex;
+    /* Define o fundo do nome como um container flexível */
+    align-items: center;
+    /* Alinha o conteúdo verticalmente ao centro */
+    justify-content: center;
+    /* Alinha o conteúdo horizontalmente ao centro */
+    border-radius: 10px;
+    /* Aplica bordas arredondadas ao fundo do nome do planeta */
+}
+
+/* Estilização do texto do nome do planeta */
+.planet-name {
+    font-family: 'Star Wars', sans-serif;
+    /* Aplica a fonte 'Star Wars' ao texto */
+    color: gold;
+    /* Define a cor do texto como dourado */
+    font-size: 1rem;
+    /* Define o tamanho da fonte como 1rem */
+}
+
+/* Ajustes adicionais para o nome do planeta */
+.planet-name {
+    font-family: 'Star Wars', sans-serif;
+    /* Garante que a fonte 'Star Wars' seja aplicada */
+    font-size: 1.2rem;
+    /* Ajusta o tamanho da fonte para 1.2rem */
+    color: gold;
+    /* Mantém a cor dourada do texto */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Estilização dos botões de navegação */
+.buttons {
+    width: 60%;
+    /* Define a largura dos botões como 60% do seu container */
+    display: flex;
+    /* Define o container dos botões como flexível */
+    align-items: center;
+    /* Alinha os botões verticalmente ao centro */
+    justify-content: space-between;
+    /* Distribui os botões com espaçamento igual entre eles */
+    margin-top: 20px;
+    /* Aplica uma margem superior de 20px ao container dos botões */
+}
+
+/* Estilização de cada botão */
+button {
+    width: 70px;
+    /* Define a largura dos botões como 70px */
+    height: 25px;
+    /* Define a altura dos botões como 25px */
+    background-color: gold;
+    /* Define a cor de fundo dos botões como dourado */
+    color: #000;
+    /* Define a cor do texto dos botões como preto */
+    font-weight: 700;
+    /* Define o peso da fonte como 700 (negrito) */
+    border-radius: 3px;
+    /* Aplica bordas arredondadas aos botões */
+    cursor: pointer;
+    /* Aplica o cursor de ponteiro (mão) ao passar o mouse sobre o botão */
+    border: 1px solid #000;
+    /* Define a borda do botão como preta */
+    outline: none;
+    /* Remove o contorno do botão ao ser clicado */
+    transition: 0.3s;
+    /* Aplica uma transição suave de 0.3 segundos nas interações do botão */
+}
+
+/* Estilo do botão ao passar o mouse sobre ele */
+button:hover {
+    background-color: #000;
+    /* Altera o fundo do botão para preto ao passar o mouse */
+    color: gold;
+    /* Altera a cor do texto para dourado ao passar o mouse */
+}
+
+/* Torna o botão 'back-button' invisível */
+#back-button {
+    visibility: hidden;
+    /* Define a visibilidade do botão 'back-button' como invisível */
+}
+
+/* Estilização do rodapé */
+footer {
+    width: 100%;
+    /* Define a largura do rodapé como 100% */
+    display: flex;
+    /* Define o rodapé como flexível */
+    flex-direction: column;
+    /* Organiza os itens do rodapé em uma coluna */
+    align-items: center;
+    /* Alinha os itens do rodapé horizontalmente ao centro */
+    row-gap: 10px;
+    /* Define um espaçamento vertical de 10px entre os itens */
+    margin: 40px 0 20px 0;
+    /* Aplica margens no rodapé: 40px em cima, 20px embaixo e 0 nas laterais */
+}
+
+/* Estilização do logo no rodapé */
+.footer-logo {
+    font-family: 'Star Wars', sans-serif;
+    /* Aplica a fonte 'Star Wars' ao logo do rodapé */
+    font-size: 1.5rem;
+    /* Define o tamanho da fonte como 1.5rem */
+    font-weight: 500;
+    /* Define o peso da fonte como 500 (semi-negrito) */
+}
+
+/* Estilização do copyright no rodapé */
+.copyrigth {
+    font-weight: 500;
+    /* Define o peso da fonte como 500 (semi-negrito) */
+}
+
+/* Estilização do modal */
+.modal {
+    visibility: hidden;
+    /* Define a visibilidade do modal como invisível por padrão */
+    display: flex;
+    /* Define o modal como um container flexível */
+    align-items: center;
+    /* Alinha o conteúdo do modal verticalmente ao centro */
+    justify-content: center;
+    /* Alinha o conteúdo do modal horizontalmente ao centro */
+    width: 100vw;
+    /* Define a largura do modal como 100% da largura da janela */
+    height: 100vh;
+    /* Define a altura do modal como 100% da altura da janela */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Aplica um fundo semitransparente preto ao modal */
+    position: fixed;
+    /* Define a posição do modal como fixa, cobrindo a tela */
+    top: 0;
+    /* Posiciona o modal no topo da tela */
+}
+
+/* Estilização do conteúdo dentro do modal */
+.modal-content {
+    width: 25vw;
+    /* Define a largura do conteúdo do modal como 25% da largura da janela */
+    height: 70vh;
+    /* Define a altura do conteúdo do modal como 70% da altura da janela */
+    background-color: #0d0d0d;
+    /* Define a cor de fundo do conteúdo do modal como cinza escuro */
+    border-radius: 12px;
+    /* Aplica bordas arredondadas ao conteúdo do modal */
+    display: flex;
+    /* Define o conteúdo do modal como flexível */
+    flex-direction: column;
+    /* Organiza os itens do conteúdo do modal em uma coluna */
+    row-gap: 15px;
+    /* Define um espaçamento de 15px entre os itens do conteúdo */
+    padding: 30px 10px;
+    /* Aplica um preenchimento de 30px nas laterais e 10px no topo e fundo */
+    align-items: center;
+    /* Alinha o conteúdo ao centro horizontalmente */
+}
+
+/* Estilização da imagem do planeta */
+.planet-image {
+    width: 200px;
+    /* Define a largura da imagem do planeta como 200px */
+    height: 200px;
+    /* Define a altura da imagem do planeta como 200px */
+    border-radius: 50%;
+    /* Torna a imagem redonda aplicando bordas arredondadas de 50% */
+    background-position: 50% 10%;
+    /* Centraliza a posição de fundo da imagem com leve deslocamento vertical */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área sem distorcer */
+}
+
+/* Estilização dos detalhes do planeta */
+.planet-details {
+    font-family: 'Star Wars', sans-serif;
+    /* Aplica a fonte 'Star Wars' aos detalhes do planeta */
+    font-size: 1rem;
+    /* Define o tamanho da fonte como 1rem */
+    font-weight: lighter;
+    /* Define o peso da fonte como mais leve */
+    color: gold;
+    /* Define a cor do texto como dourado */
+}
+
+/* Estilos para ajustes de layout em tablets (largura até 768px) */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 60%;
+        /* Ajusta a largura do logo para 60% da largura do container */
+    }
+
+    .social-media {
+        width: 100px;
+        /* Ajusta a largura do container das redes sociais para 100px */
+    }
+
+    .main-content {
+        padding: 0 10px;
+        /* Ajusta o preenchimento lateral do conteúdo principal */
+        column-gap: 10px;
+        /* Ajusta o espaçamento entre as colunas para 10px */
+        row-gap: 10px;
+        /* Ajusta o espaçamento entre as linhas para 10px */
+    }
+
+    .cards {
+        width: 180px;
+        /* Ajusta a largura das cartas para 180px */
+        height: 370px;
+        /* Ajusta a altura das cartas para 370px */
+    }
+
+    .modal-content {
+        width: 50vw;
+        /* Ajusta a largura do conteúdo do modal para 50% da largura da janela */
+        height: 60vh;
+        /* Ajusta a altura do conteúdo do modal para 60% da altura da janela */
+    }
+
+    .buttons {
+        width: 80%;
+        /* Ajusta a largura dos botões para 80% da largura do container */
+    }
+}
+
+/* Ajustes para celulares (largura até 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        /* Ajusta a direção do header para coluna */
+        align-items: 10px 0;
+        /* Ajusta o alinhamento dos itens dentro do header */
+    }
+
+    .logo {
+        flex-direction: 10px;
+        /* Ajusta a direção da logo */
+    }
+
+    .logo-img {
+        width: 80%;
+        /* Ajusta a largura da imagem do logo para 80% */
+    }
+
+    .logo-text {
+        font-size: 0.8rem;
+        /* Ajusta o tamanho da fonte do texto do logo para 0.8rem */
+    }
+
+    .social-media {
+        width: 100px;
+        /* Ajusta a largura das redes sociais para 100px */
+        display: flex;
+        /* Define o container das redes sociais como flexível */
+        justify-content: space-between;
+        /* Distribui as redes sociais com espaçamento entre elas */
+        margin-bottom: 20px;
+        /* Aplica margem inferior de 20px */
+    }
+
+    .main-container {
+        padding: 10px 0;
+        /* Aplica um preenchimento de 10px no topo e no fundo */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        /* Ajusta o tamanho da fonte dos títulos para 1.2rem */
+        margin-top: 20px;
+        /* Aplica uma margem superior de 20px */
+        text-align: center;
+        /* Centraliza os títulos */
+    }
+
+    .main-content {
+        padding: 0 10px;
+        /* Ajusta o preenchimento lateral do conteúdo principal */
+        column-gap: 5px;
+        /* Ajusta o espaçamento entre as colunas para 5px */
+        row-gap: 5px;
+        /* Ajusta o espaçamento entre as linhas para 5px */
+    }
+
+    .cards {
+        width: 150px;
+        /* Ajusta a largura das cartas para 150px */
+        height: 300px;
+        /* Ajusta a altura das cartas para 300px */
+    }
+
+    .buttons {
+        width: 100%;
+        /* Ajusta a largura dos botões para 100% */
+    }
+
+    button {
+        width: 60px;
+        /* Ajusta a largura dos botões para 60px */
+        height: 30px;
+        /* Ajusta a altura dos botões para 30px */
+        font-size: 0.9rem;
+        /* Ajusta o tamanho da fonte dos botões para 0.9rem */
+    }
+
+    .modal-content {
+        width: 80vw;
+        /* Ajusta a largura do conteúdo do modal para 80% da largura da janela */
+        height: 70vh;
+        /* Ajusta a altura do conteúdo do modal para 70% da altura da janela */
+    }
+
+    .footer-logo {
+        font-size: 1.2rem;
+        /* Ajusta o tamanho da fonte do logo do rodapé para 1.2rem */
+    }
+}
+
+/* Estilo do menu */
+.menu {
+    display: flex;
+    /* Define o menu como flexível */
+    align-items: center;
+    /* Alinha os itens do menu verticalmente ao centro */
+}
+
+.menu ul {
+    display: flex;
+    /* Define a lista de itens do menu como flexível */
+    gap: 20px;
+    /* Define um espaçamento de 20px entre os itens do menu */
+}
+
+.menu ul li a {
+    font-family: 'Star Wars', sans-serif;
+    /* Aplica a fonte 'Star Wars' aos links do menu */
+    color: #fff;
+    /* Define a cor dos links como branca */
+    font-size: 1rem;
+    /* Define o tamanho da fonte dos links como 1rem */
+    padding: 10px 20px;
+    /* Aplica um preenchimento interno aos links */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Define uma transição suave para cor e fundo */
+}
+
+.menu ul li a:hover {
+    background-color: gold;
+    /* Muda o fundo para dourado ao passar o mouse */
+    color: #000;
+    /* Muda a cor do texto para preto ao passar o mouse */
+    border-radius: 5px;
+    /* Aplica bordas arredondadas ao link ao passar o mouse */
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        /* Alinha os itens do menu verticalmente em telas menores */
+        gap: 10px;
+        /* Ajusta o espaçamento entre os itens do menu para 10px */
+    }
+}

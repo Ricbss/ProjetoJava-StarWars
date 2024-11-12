@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define o tipo de documento como HTML5 e especifica o idioma como inglês -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Garante compatibilidade com o Microsoft Edge -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a largura para ser responsiva -->
+    <title>Star Wars Characters</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="./planetas.css"> <!-- Link para o arquivo CSS que estiliza a página -->
+    <link rel="shortcut icon" href="./arquivos/millennium-falcon.png" type="image/x-icon"> <!-- Ícone exibido na aba -->
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"> <!-- Link para a página inicial -->
+            <div class="logo"> <!-- Contêiner para o logo e o menu de navegação -->
+                <img src="./arquivos/Star Wars Logo3.png" alt="logo" class="logo-img" /> <!-- Exibe a imagem do logo -->
+                <!-- <span class="logo-text"><b>Characters</b></span> -->
+                <!-- Texto alternativo para o logo, comentado -->
+
+                <!-- Menu principal -->
+                <nav class="menu"> <!-- Menu de navegação principal -->
+                    <ul> <!-- Lista não ordenada para organizar os links de navegação -->
+                        <li><a href="./index.html">Home</a></li> <!-- Link para a página Home -->
+                        <li><a href="./characters.html">Personagens</a></li> <!-- Link para Personagens -->
+                        <li><a href="./planets.html">Planetas</a></li> <!-- Link para Planetas -->
+                        <li><a href="./spaceships.html">Naves Espaciais</a></li> <!-- Link para Naves Espaciais -->
+                    </ul>
+                </nav>
+            </div>
+        </a>
+
+        <div class="social-media"> <!-- Seção para links de redes sociais -->
+            <a href="https://www.instagram.com/ric.b94/" target="_blank">
+                <!-- Link para o Instagram, abre em nova aba -->
+                <i class="fa-brands fa-instagram"></i> <!-- Ícone do Instagram usando Font Awesome -->
+            </a>
+            <a href="https://www.facebook.com/ricardo.barreto.311" target="_blank"> <!-- Link para o Facebook -->
+                <i class="fa-brands fa-facebook-f"></i> <!-- Ícone do Facebook usando Font Awesome -->
+            </a>
+            <a href="https://github.com/Ricbss" target="_blank"> <!-- Link placeholder para o GitHub -->
+                <i class="fa-brands fa-github"></i> <!-- Ícone do GitHub -->
+            </a>
+            <a href="https://www.linkedin.com/in/ricardo-barreto-521241277/" target="_blank">
+                <!-- Link placeholder para o LinkedIn -->
+                <i class="fa-brands fa-linkedin-in"></i> <!-- Ícone do LinkedIn -->
+            </a>
+        </div>
+    </header>
+
+    <div class="main-container"> <!-- Contêiner principal para o conteúdo da página -->
+        <h2>Conheca um pouco sobre Star Wars em um so lugar</h2> <!-- Título da seção principal -->
+
+        <div class="main-content" id="main-content"></div> <!-- Div onde o conteúdo dos planetas será carregado -->
+
+        <div class="modal" id="modal" onclick="hideModal()"> <!-- Modal que aparece ao clicar em um planeta -->
+            <div class="modal-content" id="modal-content"></div>
+            <!-- Conteúdo do modal exibido com detalhes do planeta -->
+        </div>
+
+        <div class="buttons"> <!-- Div para botões de navegação entre páginas -->
+            <button id="back-button" disabled>Anterior</button>
+            <!-- Botão para página anterior, inicialmente desativado -->
+            <button id="next-button" disabled>Próxima</button>
+            <!-- Botão para próxima página, inicialmente desativado -->
+        </div>
+    </div>
+
+    <footer> <!-- Rodapé da página -->
+        <p class="footer-logo">Star Wars</p> <!-- Texto do rodapé com o nome da franquia -->
+        <p class="copyrigth">Desenvolvido por &copy; Ricardo Barreto</p> <!-- Texto de direitos autorais -->
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4b2cb3cb32.js" crossorigin="anonymous"></script>
+    <!-- Biblioteca Font Awesome para ícones -->
+    <script src="./planets.js"></script> <!-- Arquivo JavaScript que contém a lógica para exibir os planetas -->
+</body>
+
+</html>

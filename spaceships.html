@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="./spaceships.css">
+    <link rel="shortcut icon" href="./arquivos/millennium-falcon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="logo">
+                <img src="./arquivos/Star Wars Logo3.png" alt="logo" class="logo-img" />
+                <!-- <span class="logo-text"><b>Characters</b></span> -->
+
+                <!-- Menu principal -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./characters.html">Personagens</a></li>
+                        <li><a href="./planets.html">Planetas</a></li>
+                        <li><a href="./spaceships.html">Naves Espaciais</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </a>
+
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/ric.b94/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/ricardo.barreto.311" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://github.com/Ricbss" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ricardo-barreto-521241277/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <h2>Conheca um pouco sobre Star Wars em um so lugar</h2>
+
+        <div class="main-content" id="main-content"></div> <!-- Div onde o conteúdo dos planetas será carregado -->
+
+        <div class="modal" id="modal" onclick="hideModal()"> <!-- Modal que aparece ao clicar em um planeta -->
+            <div class="modal-content" id="modal-content"></div>
+            <!-- Conteúdo do modal exibido com detalhes do planeta -->
+        </div>
+
+        <div class="buttons"> <!-- Div para botões de navegação entre páginas -->
+            <button id="back-button" disabled>Anterior</button>
+            <!-- Botão para página anterior, inicialmente desativado -->
+            <button id="next-button" disabled>Próxima</button>
+            <!-- Botão para próxima página, inicialmente desativado -->
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p class="footer-logo">Star Wars</p>
+        <p class="copyrigth">Desenvolvido por &copy; Ricardo Barreto</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4b2cb3cb32.js" crossorigin="anonymous"></script>
+    <!-- Biblioteca Font Awesome para ícones -->
+    <script src="./spaceships.js"></script>
+
+</body>
+
+</html>

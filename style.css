@@ -1,0 +1,461 @@
+/* Importação da fonte personalizada Star Wars */
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+body {
+    background-image: url('./arquivos/Fundo5.jpg');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho e logo */
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Estilização das redes sociais */
+.social-media {
+    width: 130px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+i:hover {
+    color: gold;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80%;
+    height: auto;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    font-family: 'Star Wars', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: gold;
+    color: #000;
+    border-radius: 5px;
+}
+
+
+/* Container principal */
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: 'Star Wars', sans-serif;
+    margin-bottom: 20px;
+    color: gold;
+    font-weight: 300;
+}
+
+/* Conteúdo principal */
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+}
+
+/* Vídeo e Sinopse */
+#trailer-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.trailer {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+#sinopse {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.description {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* Estilização das cartas de personagens */
+.cards {
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.character-name-bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.character-name {
+    font-family: 'Star Wars', sans-serif;
+    color: gold;
+    font-size: 1rem;
+}
+
+/* Botões de navegação */
+.buttons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: gold;
+}
+
+#back-button {
+    visibility: hidden;
+}
+
+/* Estilização do rodapé */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyrigth {
+    font-weight: 500;
+}
+
+/* Estilização do modal */
+.modal {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+.modal-content {
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.character-details {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gold;
+}
+
+/* Estilos para ajustes de layout em tablets (largura até 768px) */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 60%;
+        /* Ajusta a largura do logo para 60% da largura do container */
+    }
+
+    .social-media {
+        width: 100px;
+        /* Ajusta a largura do container das redes sociais para 100px */
+    }
+
+    .main-content {
+        padding: 0 10px;
+        /* Ajusta o preenchimento lateral do conteúdo principal */
+        column-gap: 10px;
+        /* Ajusta o espaçamento entre as colunas para 10px */
+        row-gap: 10px;
+        /* Ajusta o espaçamento entre as linhas para 10px */
+    }
+
+    .cards {
+        width: 180px;
+        /* Ajusta a largura das cartas para 180px */
+        height: 370px;
+        /* Ajusta a altura das cartas para 370px */
+    }
+
+    .modal-content {
+        width: 50vw;
+        /* Ajusta a largura do conteúdo do modal para 50% da largura da janela */
+        height: 60vh;
+        /* Ajusta a altura do conteúdo do modal para 60% da altura da janela */
+    }
+
+    .buttons {
+        width: 80%;
+        /* Ajusta a largura dos botões para 80% da largura do container */
+    }
+}
+
+/* Ajustes para celulares (largura até 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        /* Ajusta a direção do header para coluna */
+        align-items: 10px 0;
+        /* Ajusta o alinhamento dos itens dentro do header */
+    }
+
+    .logo {
+        flex-direction: 10px;
+        /* Ajusta a direção da logo */
+    }
+
+    .logo-img {
+        width: 80%;
+        /* Ajusta a largura da imagem do logo para 80% */
+    }
+
+    .logo-text {
+        font-size: 0.8rem;
+        /* Ajusta o tamanho da fonte do texto do logo para 0.8rem */
+    }
+
+    .social-media {
+        width: 100px;
+        /* Ajusta a largura das redes sociais para 100px */
+        display: flex;
+        /* Define o container das redes sociais como flexível */
+        justify-content: space-between;
+        /* Distribui as redes sociais com espaçamento entre elas */
+        margin-bottom: 20px;
+        /* Aplica margem inferior de 20px */
+    }
+
+    .main-container {
+        padding: 10px 0;
+        /* Aplica um preenchimento de 10px no topo e no fundo */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        /* Ajusta o tamanho da fonte dos títulos para 1.2rem */
+        margin-top: 20px;
+        /* Aplica uma margem superior de 20px */
+        text-align: center;
+        /* Centraliza os títulos */
+    }
+
+    .main-content {
+        padding: 0 10px;
+        /* Ajusta o preenchimento lateral do conteúdo principal */
+        column-gap: 5px;
+        /* Ajusta o espaçamento entre as colunas para 5px */
+        row-gap: 5px;
+        /* Ajusta o espaçamento entre as linhas para 5px */
+    }
+
+    .cards {
+        width: 150px;
+        /* Ajusta a largura das cartas para 150px */
+        height: 300px;
+        /* Ajusta a altura das cartas para 300px */
+    }
+
+    .buttons {
+        width: 100%;
+        /* Ajusta a largura dos botões para 100% */
+    }
+
+    button {
+        width: 60px;
+        /* Ajusta a largura dos botões para 60px */
+        height: 30px;
+        /* Ajusta a altura dos botões para 30px */
+        font-size: 0.9rem;
+        /* Ajusta o tamanho da fonte dos botões para 0.9rem */
+    }
+
+    .modal-content {
+        width: 80vw;
+        /* Ajusta a largura do conteúdo do modal para 80% da largura da janela */
+        height: 70vh;
+        /* Ajusta a altura do conteúdo do modal para 70% da altura da janela */
+    }
+
+    .footer-logo {
+        font-size: 1.2rem;
+        /* Ajusta o tamanho da fonte do logo do rodapé para 1.2rem */
+    }
+}
+
+/* Estilo do menu */
+.menu {
+    display: flex;
+    /* Define o menu como flexível */
+    align-items: center;
+    /* Alinha os itens do menu verticalmente ao centro */
+}
+
+.menu ul {
+    display: flex;
+    /* Define a lista de itens do menu como flexível */
+    gap: 20px;
+    /* Define um espaçamento de 20px entre os itens do menu */
+}
+
+.menu ul li a {
+    font-family: 'Star Wars', sans-serif;
+    /* Aplica a fonte 'Star Wars' aos links do menu */
+    color: #fff;
+    /* Define a cor dos links como branca */
+    font-size: 1rem;
+    /* Define o tamanho da fonte dos links como 1rem */
+    padding: 10px 20px;
+    /* Aplica um preenchimento interno aos links */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Define uma transição suave para cor e fundo */
+}
+
+.menu ul li a:hover {
+    background-color: gold;
+    /* Muda o fundo para dourado ao passar o mouse */
+    color: #000;
+    /* Muda a cor do texto para preto ao passar o mouse */
+    border-radius: 5px;
+    /* Aplica bordas arredondadas ao link ao passar o mouse */
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        /* Alinha os itens do menu verticalmente em telas menores */
+        gap: 10px;
+        /* Ajusta o espaçamento entre os itens do menu para 10px */
+    }
+}
